@@ -18,8 +18,19 @@
               <p>Precio base: $<span class="precio-inicial"></span> </p>
         
               <p>Cantidad:
-                <span class="cantidad">0</span>
-                <button onclick=""
+                <span id="cantidad" class="cantidad">0</span>
+                <button onclick="
+
+                    cantidad = document.querySelector('#cantidad');
+                    contador = Number(cantidad.textContent)
+
+                    contador += 1;
+
+                    cantidad.innerHTML = contador
+
+                    console.log(contador);
+                
+                "
                 >+</button>
                 <button onclick=""
                 >-</button>
